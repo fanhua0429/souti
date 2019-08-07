@@ -2,8 +2,8 @@
 //  soutiUITests.m
 //  soutiUITests
 //
-//  Created by 周红敏 on 16/3/24.
-//  Copyright © 2016年 zhangyanjiang. All rights reserved.
+//  Created by 樊华 on 16/3/24.
+//  Copyright © 2018年 fanhua. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
