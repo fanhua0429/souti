@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  souti
+//
+//  Created by zhangyanjiang on 16/4/20.
+//  Copyright © 2016年 zhangyanjiang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// 屏幕的宽高
+#define kScreenH ([UIScreen mainScreen].bounds.size.height)
+#define kScreenW ([UIScreen mainScreen].bounds.size.width)
+
+// 设置宽高比例
+#define Scale_W (float)kScreenW/375.f
+#define Scale_H (float)kScreenH/667.f
+
+// 配置颜色
+#define kCOLOR_R_G_B_A(r,g,b,a) [UIColor colorWithRed:r/255.0f  green:g/255.0f  blue:b/255.0f alpha:a]
+
+
+#endif /* PrefixHeader_pch */

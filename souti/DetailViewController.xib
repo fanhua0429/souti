@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController">
+            <connections>
+                <outlet property="backgroundView" destination="fVr-MR-ZLc" id="90r-ac-ZMa"/>
+                <outlet property="content" destination="Wgp-qt-d0H" id="ogv-xV-AoZ"/>
+                <outlet property="view" destination="bXZ-xu-vc1" id="SUw-Jv-ocz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="bXZ-xu-vc1">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVr-MR-ZLc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                    <color key="backgroundColor" red="0.50408017329999999" green="1" blue="0.90825809209999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="fVr-MR-ZLc" secondAttribute="height" multiplier="5:2" id="7M0-QS-Np4"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="7M0-QS-Np4"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="7M0-QS-Np4"/>
+                        </mask>
+                    </variation>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgp-qt-d0H">
+                    <rect key="frame" x="10" y="165" width="355" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Wgp-qt-d0H" firstAttribute="centerX" secondItem="bXZ-xu-vc1" secondAttribute="centerX" id="52Y-g0-fjR"/>
+                <constraint firstAttribute="bottom" secondItem="Wgp-qt-d0H" secondAttribute="bottom" constant="40" id="5kP-xH-zGY"/>
+                <constraint firstItem="fVr-MR-ZLc" firstAttribute="leading" secondItem="bXZ-xu-vc1" secondAttribute="leading" id="Lw4-BG-wd1"/>
+                <constraint firstItem="fVr-MR-ZLc" firstAttribute="top" secondItem="bXZ-xu-vc1" secondAttribute="top" id="eBO-x1-b1j"/>
+                <constraint firstItem="fVr-MR-ZLc" firstAttribute="centerX" secondItem="bXZ-xu-vc1" secondAttribute="centerX" id="gfM-4z-NYQ"/>
+                <constraint firstItem="Wgp-qt-d0H" firstAttribute="top" secondItem="fVr-MR-ZLc" secondAttribute="bottom" constant="15" id="h2H-E8-cwV"/>
+                <constraint firstAttribute="trailing" secondItem="fVr-MR-ZLc" secondAttribute="trailing" id="htV-Go-f7C"/>
+                <constraint firstItem="Wgp-qt-d0H" firstAttribute="leading" secondItem="bXZ-xu-vc1" secondAttribute="leading" constant="10" id="sDP-2a-c2o"/>
+                <constraint firstAttribute="trailing" secondItem="Wgp-qt-d0H" secondAttribute="trailing" constant="10" id="tHP-bu-Iih"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="fVr-MR-ZLc"/>
+                    <exclude reference="Wgp-qt-d0H"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="52Y-g0-fjR"/>
+                    <exclude reference="5kP-xH-zGY"/>
+                    <exclude reference="h2H-E8-cwV"/>
+                    <exclude reference="sDP-2a-c2o"/>
+                    <exclude reference="tHP-bu-Iih"/>
+                    <exclude reference="Lw4-BG-wd1"/>
+                    <exclude reference="eBO-x1-b1j"/>
+                    <exclude reference="gfM-4z-NYQ"/>
+                    <exclude reference="htV-Go-f7C"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="fVr-MR-ZLc"/>
+                    <include reference="Wgp-qt-d0H"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="52Y-g0-fjR"/>
+                    <include reference="5kP-xH-zGY"/>
+                    <include reference="h2H-E8-cwV"/>
+                    <include reference="sDP-2a-c2o"/>
+                    <include reference="tHP-bu-Iih"/>
+                    <include reference="Lw4-BG-wd1"/>
+                    <include reference="eBO-x1-b1j"/>
+                    <include reference="gfM-4z-NYQ"/>
+                    <include reference="htV-Go-f7C"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="477" y="-77"/>
+        </scrollView>
+    </objects>
+</document>
